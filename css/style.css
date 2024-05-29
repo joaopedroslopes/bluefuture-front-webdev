@@ -1,0 +1,76 @@
+/* ==============================
+   RAIZ
+   ============================== */
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    /* background-color: var(--color-cream); */
+    background-image: url('../images/imagem-oceano-fundo.jpg');
+}
+
+/* ==============================
+   SEÇÕES - RAIZ
+   ============================== */
+
+.caixa {
+    height: 100vh;
+    width: 100%;
+
+    /* TEMPORÁRIO */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* TEMPORÁRIO */
+.conteudo-section{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* TEMPORÁRIO */
+#caixa1{
+    height: calc(100vh - 100px);
+    background-color: var(--color-black);
+}
+
+/* ==============================
+   HEADER
+   ============================== */
+
+header{
+    height: 100px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#links-header{
+    display: flex;
+    gap: 20px;
+
+    li{
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: var(--color-black);
+        font-weight: 500;
+    }
+
+}
+
