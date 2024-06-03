@@ -52,3 +52,38 @@ header{
 #links-header a:hover{
     color: var(--color-cream);
 }
+
+/* ==============================   MENU    ============================== */
+
+#menu{
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+    margin: 0 auto;
+}
+
+.conteudo-menu{
+
+    text-shadow: 0 0 1px var(--color-black);
+
+    strong{
+        font-weight: 500;
+        color: var(--color-blue);
+        font-size: 15rem;
+    }
+
+    h1{
+        font-weight: 400;
+        color: var(--color-cream);
+        font-size: 18rem;
+    }
+
+    p{
+        font-weight: 300;
+        color: var(--color-grey);
+        font-size: 3rem;
+        text-align: center;
+        margin-top: -50px;
+    }
+
+}
