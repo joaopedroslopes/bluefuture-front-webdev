@@ -1,51 +1,54 @@
+/* ==============================   HEADER    ============================== */
+
 header{
     height: 100px;
     position: fixed;
     width: 100%;
-    font-family: Poetsen One;
+
+    text-transform: uppercase;
 }
 
-header h1{
+.titulo{
+    text-decoration: none;
     color: var(--color-blue);
-    font-size: 1.5rem;
 }
-
 
 .header-box{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
-    padding: 0 20px;
-    background-color: transparent;
+    padding: 0 50px;
+}
 
+.caixa-links{
+    background-color: transparent;
+    padding: 7px 25px;
+    border: 1.8px solid var(--color-blue);
+    border-radius: 40px;
 }
 
 #links-header{
     display: flex;
-    gap: 13px;
+    gap: 40px;
+    list-style: none;
+}
 
-    li{
-        list-style: none;
-    }
+#links-header li:nth-child(2) {
+    border-right: 1px solid var(--color-blue);
+    margin-right: -20px;
+    margin-left: -20px;
+}
 
-    a{
-        text-decoration: none;
-        color: var(--color-cream);
-        font-weight: 500;
-        
-        
-    }
+#links-header a{
+    text-decoration: none;
+    color: var(--color-blue);
+    font-weight: 630;
+    font-size: 1.4rem;
+    transition: color 600ms;
+}
 
 
-    a:hover{
-        color: var(--color-blue);
-        a:hover{
-            color: var(--color-blue);
-            
-        }
-        
-    }
-
-    
+#links-header a:hover{
+    color: var(--color-cream);
 }

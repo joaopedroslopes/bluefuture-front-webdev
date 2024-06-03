@@ -1,21 +1,22 @@
-.conteudo-section {
+/* ==============================   RAIZ    ============================== */
+
+.caixa {
     height: 100vh;
-    width: 100%;
-    gap: 20px;
-    font-family: Red Hat Display;
+    width: 100vw;
     display: flex;
     justify-content: space-around;
+    padding: 100px 0 0 0;
 
-
+    color: var(--color-blue);
 }
 
 .caixa h1{
-    font-size: 40px;
+    font-size: 4rem;
 }
 
 
 .caixa p{
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 500;
 }
 
