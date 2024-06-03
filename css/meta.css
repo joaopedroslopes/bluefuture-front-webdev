@@ -63,19 +63,27 @@ header{
 }
 
 .conteudo-menu{
-    color: var(--color-cream);
+
+    text-shadow: 0 0 1px var(--color-black);
 
     strong{
+        font-weight: 500;
         color: var(--color-blue);
-        font-size: 18rem;
+        font-size: 15rem;
     }
 
     h1{
-        font-size: 26rem;
+        font-weight: 400;
+        color: var(--color-cream);
+        font-size: 18rem;
     }
 
-    h1, strong{
-        font-weight: 630;
+    p{
+        font-weight: 300;
+        color: var(--color-grey);
+        font-size: 3rem;
+        text-align: center;
+        margin-top: -50px;
     }
 
 }
