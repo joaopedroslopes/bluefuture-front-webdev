@@ -52,3 +52,30 @@ header{
 #links-header a:hover{
     color: var(--color-cream);
 }
+
+/* ==============================   HEADER    ============================== */
+
+#menu{
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+    margin: 0 auto;
+}
+
+.conteudo-menu{
+    color: var(--color-cream);
+
+    strong{
+        color: var(--color-blue);
+        font-size: 18rem;
+    }
+
+    h1{
+        font-size: 26rem;
+    }
+
+    h1, strong{
+        font-weight: 630;
+    }
+
+}
