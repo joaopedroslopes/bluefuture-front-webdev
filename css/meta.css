@@ -1,0 +1,51 @@
+header{
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    font-family: Poetsen One;
+}
+
+header h1{
+    color: var(--color-blue);
+    font-size: 1.5rem;
+}
+
+
+.header-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    background-color: transparent;
+
+}
+
+#links-header{
+    display: flex;
+    gap: 13px;
+
+    li{
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: var(--color-cream);
+        font-weight: 500;
+        
+        
+    }
+
+
+    a:hover{
+        color: var(--color-blue);
+        a:hover{
+            color: var(--color-blue);
+            
+        }
+        
+    }
+
+    
+}
