@@ -34,6 +34,22 @@
 
 
 /* ==============================   SECTIONS    ============================== */
+#section-problemas h3{
+    color: var(--color-cream);
+}
+
+#section-problemas p{
+    margin: 10px;
+}
+
+#section-problemas h1{
+    color: var(--color-blue);
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+
+
 #conteudo-tecnologia {
     display: flex;
     flex-direction: column;
@@ -41,7 +57,13 @@
 }
 
 #section-tecnologia{
-    background-color: var(--color-cream);
+    background-color: var(--color-grey);
+}
+
+#section-tecnologia h2{
+    color: var(--color-blue-marine);
+
+
 }
 
 #section-tecnologia p{
@@ -63,8 +85,9 @@
 }
 
 
+
 /* ==============================   IMAGENS    ============================== */
-.images-container {
+.images-tec {
     display: flex;
     justify-content: space-between;
     align-items: center;
