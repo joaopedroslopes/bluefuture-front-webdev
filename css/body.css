@@ -28,21 +28,45 @@
     flex-direction: column;
 }
 
-/* TEMPORÁRIO */
-#caixa1{
-    height: calc(100vh - 100px);
+
+/* ==============================   SECTIONS    ============================== */
+#conteudo-tecnologia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section-tecnologia{
+    background-color: var(--color-cream);
+}
+
+#section-tecnologia p{
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 20px 0;
+    text-wrap: wrap;
+    color: var(--color-black);
+}
+
+#section-objetivos{
+    background-color: var(--color-dark-blue);
+
 }
 
 
 
-
-
-/*CAIXA DE CONTEUDO*/
-
-#caixa4{
-    background-color: white;
-
-
-
-
+/* ==============================   IMAGENS    ============================== */
+.images-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+#Bacteria{
+    width: 22vw;
+}
+
+#sensor{
+    width: 9vw;
+}
+
