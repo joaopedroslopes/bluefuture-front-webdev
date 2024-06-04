@@ -44,9 +44,25 @@ header{
     transition: color 600ms;
 }
 
-
 #links-header a:hover{
     color: var(--color-cream);
+}
+
+/* ==============================   RODAPÉ    ============================== */
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;  
+    display: flex;
+    justify-content: start; 
+    background-color: transparent;
+    height: 2vh;
+    color: var(--color-cream);
+    font-size: 1.5rem;
+    padding-left: 10px; 
 }
 
 /* ==============================   MENU    ============================== */
