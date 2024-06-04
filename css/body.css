@@ -6,12 +6,11 @@
     display: flex;
     justify-content: space-around;
     padding: 100px 0 0 0;
-
-    color: var(--color-blue);
 }
 
 .caixa h2{
     font-size: 5rem;
+    color: var(--color-blue);
 }
 
 
@@ -33,7 +32,8 @@
 }
 
 
-/* ==============================   SECTIONS    ============================== */
+/* ==============================   PROBLEMAS    ============================== */
+
 #section-problemas h3{
     color: var(--color-cream);
 }
@@ -48,7 +48,7 @@
     font-weight: 500;
 }
 
-
+/* ==============================   TECNOLOGIA    ============================== */
 
 #conteudo-tecnologia {
     display: flex;
@@ -57,13 +57,7 @@
 }
 
 #section-tecnologia{
-    background-color: var(--color-grey);
-}
-
-#section-tecnologia h2{
-    color: var(--color-blue-marine);
-
-
+    background-color: var(--color-blue-marine);
 }
 
 #section-tecnologia p{
@@ -74,30 +68,37 @@
     color: var(--color-black);
 }
 
+/* ==============================   OBJETIVOS    ============================== */
+
 #section-objetivos{
     background-color: var(--color-dark-blue);
 
 }
+
+/* ==============================   PUBLICOALVO    ============================== */
 
 #section-publicoalvo{
     background-image: url(/);
 
 }
 
-
-
 /* ==============================   IMAGENS    ============================== */
-.images-tec {
+
+.images-tecnologia {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#Bacteria{
+#img-bacteria{
     width: 22vw;
 }
 
-#sensor{
+#img-sensor{
     width: 9vw;
+}
+
+#img-info-microplastico{
+    width: 20vw;
 }
 
