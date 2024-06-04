@@ -11,15 +11,18 @@
 .caixa h2{
     font-size: 5rem;
     color: var(--color-blue);
+    text-align: center;
 }
 
 
-.caixa p{
+.conteudo-section p{
     font-size: 2rem;
     font-weight: 400;
     color: var(--color-cream);
     text-wrap: wrap;
-    text-align: center;
+    text-align: justify;
+    width: 55%;
+    margin-top: 10px;
 }
 
 /* TEMPORÁRIO */
@@ -34,18 +37,24 @@
 
 /* ==============================   PROBLEMAS    ============================== */
 
+#conteudo-problemas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: -8%;
+}
+
 #section-problemas h3{
-    color: var(--color-cream);
-}
-
-#section-problemas p{
-    margin: 10px;
-}
-
-#section-problemas h1{
     color: var(--color-blue);
-    font-size: 3rem;
-    font-weight: 500;
+    text-align: center;
+    margin-bottom: -40px;
+}
+
+#textos-problemas{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* ==============================   TECNOLOGIA    ============================== */
@@ -57,23 +66,16 @@
 }
 
 #section-tecnologia{
-    background-color: var(--color-blue-marine);
+    background-color: var(--color-grey);
 }
 
 #section-tecnologia p{
-    font-size: 2rem;
     font-weight: 500;
-    margin: 20px 0;
-    text-wrap: wrap;
     color: var(--color-black);
 }
 
 /* ==============================   OBJETIVOS    ============================== */
 
-#section-objetivos{
-    background-color: var(--color-dark-blue);
-
-}
 
 /* ==============================   PUBLICOALVO    ============================== */
 
@@ -84,7 +86,7 @@
 
 /* ==============================   IMAGENS    ============================== */
 
-.images-tecnologia {
+.imagens-tecnologia {
     display: flex;
     justify-content: space-between;
     align-items: center;
