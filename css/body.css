@@ -1,5 +1,4 @@
 /* ==============================   RAIZ    ============================== */
-
 .caixa {
     height: 100vh;
     width: 100vw;
@@ -66,7 +65,7 @@
 }
 
 #section-tecnologia{
-    background-color: var(--color-grey);
+    background-color: var(--color-bluetec);
 }
 
 #section-tecnologia p{
@@ -79,10 +78,6 @@
 
 /* ==============================   PUBLICOALVO    ============================== */
 
-#section-publicoalvo{
-    background-image: url(/);
-
-}
 
 /* ==============================   IMAGENS    ============================== */
 
@@ -96,7 +91,7 @@
     width: 30vw;
 }
 
-#img-sensor{
+#sensor{
     width: 9vw;
 }
 
@@ -104,3 +99,43 @@
     width: 20vw;
 }
 
+
+/* ==============================   BREAKPOINT    ============================== */
+
+
+@media screen and (max-width: 480px) {
+    .caixa {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+    }
+
+    .conteudo-section {
+        width: 80%;
+    }
+
+    #conteudo-problemas {
+        margin-top: -10%;
+    }
+
+    #section-problemas h3 {
+        margin-bottom: -20px;
+    }
+
+    .imagens-tecnologia {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Bacteria {
+        width: 60vw;
+    }
+
+    #sensor {
+        width: 20vw;
+    }
+
+    #img-info-microplastico {
+        width: 40vw;
+    }
+}

@@ -1,5 +1,6 @@
 /* ==============================   HEADER    ============================== */
 
+
 header{
     height: 100px;
     position: fixed;
@@ -86,4 +87,50 @@ header{
         margin-top: -50px;
     }
 
+}
+
+/* ==============================   BREAKPOINT    ============================== */
+@media screen and (max-width: 480px) {
+    header {
+        height: 80px;
+    }
+
+    .titulo {
+        font-size: 1.2rem;
+    }
+
+    .header-box {
+        padding: 0 20px;
+    }
+
+    .caixa-links {
+        padding: 5px 15px;
+        font-size: 0.8rem;
+    }
+
+    #links-header {
+        gap: 20px;
+    }
+
+    #links-header li:nth-child(2) {
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+
+    #links-header a {
+        font-size: 1rem;
+    }
+
+    .conteudo-menu strong {
+        font-size: 10rem;
+    }
+
+    .conteudo-menu h1 {
+        font-size: 12rem;
+    }
+
+    .conteudo-menu p {
+        font-size: 2rem;
+        margin-top: -30px;
+    }
 }
