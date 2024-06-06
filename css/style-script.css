@@ -1,3 +1,9 @@
 .balao-link.active {
     color: var(--color-cream) !important;
 }
+
+#play, #stop{
+    display: none;
+    width: 30px;
+    margin-right: 10px;
+}

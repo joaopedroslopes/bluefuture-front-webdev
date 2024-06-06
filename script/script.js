@@ -1,7 +1,9 @@
-/* ==============================   HEADER    ============================== */
-
 const sections = document.querySelectorAll('.caixa');
 var links = document.querySelectorAll('.balao-link');
+const rolagem = document.querySelector('#rolagem');
+
+
+/* ==============================   HEADER    ============================== */
 
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
@@ -26,3 +28,29 @@ function updateActiveLinks() {
 
 window.addEventListener('load', updateActiveLinks);
 window.addEventListener('scroll', updateActiveLinks);
+
+/* ==============================   ROLAGEM    ============================== */
+
+function rolagemAutomatica() {
+    const play = document.querySelector('#play');
+    const stop = document.querySelector('#stop');
+
+    let indiceSecaoAtual = 0;
+
+    alert('Rolagem automática ativada!');
+
+    rolagem.style.display = 'none';
+
+    play.style.display = 'block';
+    stop.style.display = 'block';
+
+    setInterval(() => {
+        indiceSecaoAtual = (indiceSecaoAtual + 1) % sections.length;
+        sections[indiceSecaoAtual].scrollIntoView({ behavior: 'smooth' });
+    }, 1000);
+
+    document.addEventListener('DOMContentLoaded', rolagemAutomatica);
+
+}
+
+rolagem.addEventListener('click', rolagemAutomatica);
