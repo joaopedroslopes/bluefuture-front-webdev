@@ -22,15 +22,21 @@
     text-align: justify;
     width: 55%;
     margin-top: 10px;
+
+    strong{
+        font-weight: 700;
+        color: var(--color-blue);
+    }
+
 }
 
-/* TEMPORÁRIO */
 .conteudo-section{
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
 
@@ -141,22 +147,7 @@
     margin: 30px;
 
 }
-/* ==============================   RODAPÉ    ============================== */
 
-
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;  
-    display: flex;
-    justify-content: start; 
-    background-color: var(--color-dark-blue);
-    height: 2vh;
-    color: var(--color-cream);
-    font-size: 1.5rem;
-    padding-left: 10px; 
-}
 
 /* ==============================   BREAKPOINT    ============================== */
 
