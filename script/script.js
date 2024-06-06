@@ -1,3 +1,5 @@
+/* ==============================   HEADER    ============================== */
+
 const sections = document.querySelectorAll('.caixa');
 var links = document.querySelectorAll('.balao-link');
 
