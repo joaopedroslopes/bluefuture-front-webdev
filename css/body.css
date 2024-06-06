@@ -22,15 +22,21 @@
     text-align: justify;
     width: 55%;
     margin-top: 10px;
+
+    strong{
+        font-weight: 700;
+        color: var(--color-blue);
+    }
+
 }
 
-/* TEMPORÁRIO */
 .conteudo-section{
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
 
