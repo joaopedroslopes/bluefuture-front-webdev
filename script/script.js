@@ -1,7 +1,34 @@
 const sections = document.querySelectorAll('.caixa');
-var links = document.querySelectorAll('.balao-link');
 const rolagem = document.querySelector('#rolagem');
+const contato_btn = document.querySelector('#contato');
+var links = document.querySelectorAll('.balao-link');
 
+
+/* ==============================   CONTATO    ============================== */
+
+contato_btn.addEventListener('click', () => {
+
+    const popup = document.querySelector('.popup');
+    const close = document.querySelector('#popup-close');
+    const enviar = document.querySelector('#popup-enviar');
+
+    const email = document.querySelector('#popup-email');
+    const mensagem = document.querySelector('#popup-mensagem');
+
+    popup.style.display = 'block';
+    close.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+
+    enviar.addEventListener('click', () => {
+        alert('Mensagem enviada com sucesso!');
+        email.value = '';
+        mensagem.value = '';
+        popup.style.display = 'none';
+    })
+
+});
+    
 
 /* ==============================   HEADER    ============================== */
 
@@ -29,7 +56,8 @@ function updateActiveLinks() {
 window.addEventListener('load', updateActiveLinks);
 window.addEventListener('scroll', updateActiveLinks);
 
-/* ==============================   ROLAGEM    ============================== */
+/* ==============================   ROLAGEM AUTOMÁTICA   ============================== */
+
 let intervaloRolagem;
 let isPaused = false;
 let isRolagemAtiva = false;
@@ -96,6 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 /* ==============================   SCROLL    ============================== */
+
 document.addEventListener('wheel', (event) => {
     const deltaY = event.deltaY;
     if (deltaY > 0) {

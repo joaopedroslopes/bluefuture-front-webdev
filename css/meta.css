@@ -37,6 +37,10 @@ header {
     text-transform: uppercase;
 }
 
+.balao-link.active {
+    color: var(--color-cream) !important;
+}
+
 #rolagem {
     position: fixed;
     right: 50px;
@@ -64,6 +68,106 @@ header {
 
 #links-header a:hover {
     color: var(--color-cream);
+}
+
+#play, #stop{
+    display: none;
+    width: 30px;
+    margin-right: 10px;
+}
+
+#contato{
+    width: 30px;
+}
+
+/* ==============================   POPUP    ============================== */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.popup-box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-cream);
+    box-shadow: 0px 0px 2px var(--color-gray);
+    border-radius: 8px;
+}
+
+.popup-content{
+
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+
+    width: 500px;
+    height: 400px;
+
+}
+
+.popup-content h2{
+    color: var(--color-blue);
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+#popup-close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    color: var(--color-blue);
+    text-decoration: none;
+}
+
+#popup-email, #popup-mensagem{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid var(--color-blue);
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+
+#popup-email:focus, #popup-mensagem:focus {
+    outline: 0.5px solid var(--color-blue);
+}
+
+#popup-enviar:active {
+    background-color: var(--color-almost-blue);
+    outline: 0.5px solid var(--color-blue);
+}
+
+#popup-mensagem {
+    height: 100px;
+    resize: none;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1.4rem;
+}
+
+#popup-enviar{
+    width: 100%;
+    height: 50px;
+    background-color: var(--color-blue);
+    color: var(--color-cream);
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* ==============================   RODAPÉ    ============================== */
