@@ -85,7 +85,7 @@ function rolagemAutomatica() {
             indiceSecaoAtual = (indiceSecaoAtual + 1) % sections.length;
             sections[indiceSecaoAtual].scrollIntoView({ behavior: 'smooth' });
         }
-    }, 1000);
+    }, 10000);
 }
 
 document.querySelector('#rolagem').addEventListener('click', rolagemAutomatica);
